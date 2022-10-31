@@ -1,0 +1,51 @@
+a{
+    text-decoration: none
+}
+p{
+ height: 18px;
+
+/* Text lg/Medium */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Gray/900 */
+
+color: #101828;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.ButtonWrapper {
+  margin-bottom: 24px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 8px;
+
+  width: 70%;
+  height: 56px;
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
