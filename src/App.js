@@ -4,6 +4,7 @@ import Button from './components/Button';
 
 import SlackIcon from './images/slack.svg'
 import GitHubIcon from './images/github.svg'
+import ProfileImg from './images/ibrahim.webp'
 
 
 const App = () => {
@@ -42,6 +43,11 @@ const App = () => {
   return (
     
     <div className="App">
+
+      <div className='profileWrapper'>
+        <img src={ProfileImg} id='profile__img'/>
+        <h2 className='profileName'>Oritise Success</h2>
+      </div>
       {item.map(data => {
         return (
           <Button 
@@ -51,10 +57,13 @@ const App = () => {
         )
       })}
       
-
       <div className='IconWrapper'>
-        <img src={SlackIcon} alt='Slack-icon' className='icon' style={{marginRight: '15px'}}/>
-        <img src={GitHubIcon} alt='github-icon' className='icon'/>
+        <a href=''>
+          <img src={SlackIcon} alt='Slack-icon' className='icon' style={{marginRight: '15px'}}/>
+        </a>
+        <a  href='https://github.com/oritise1'>
+          <img src={GitHubIcon} alt='github-icon' className='icon'/>
+        </a>
       </div>
     </div>
   );
