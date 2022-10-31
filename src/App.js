@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
 
+import SlackIcon from './images/slack.svg'
+import GitHubIcon from './images/github.svg'
+
+
 const App = () => {
   const item =[
     {
@@ -38,7 +42,6 @@ const App = () => {
   return (
     
     <div className="App">
-
       {item.map(data => {
         return (
           <Button 
@@ -49,11 +52,10 @@ const App = () => {
       })}
       
 
-      {/* <Button textName='Zuri Team' link='https://training.zuri.team/'/> <br/>
-      <Button textName='Zuri Books' link='http://books.zuri.team'/> <br/>
-      <Button textName='Python Books'link='https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>' /> <br/>
-      <Button textName='Background Check For Colors' link='https://background.zuri.team/' /> <br/>
-      <Button textName='Designer Books' link='https://books.zuri.team/design-rules' /> */}
+      <div className='IconWrapper'>
+        <img src={SlackIcon} alt='Slack-icon' className='icon' style={{marginRight: '15px'}}/>
+        <img src={GitHubIcon} alt='github-icon' className='icon'/>
+      </div>
     </div>
   );
 }
