@@ -1,5 +1,8 @@
 .App{
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 182px;
 }
 img{
   width: 150px;

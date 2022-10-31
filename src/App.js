@@ -5,23 +5,45 @@ import Button from './components/Button';
 const App = () => {
   const item =[
     {
+      id: 'twitter',
       title : 'Twitter',
       link : 'https://twitter.com/oritise_success'
     },
     {
-      title : 'Twitter',
-      link : 'https://twitter.com/oritise_success'
+      id: 'btn__zuri',
+      title : 'Zuri Team',
+      link : 'https://training.zuri.team/'
+    },
+    {
+      id: 'books',
+      title : 'Zuri Books',
+      link : 'http://books.zuri.team'
+    },
+    {
+      id: 'book__python',
+      title : 'Python Books',
+      link : 'https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>'
+    },
+    {
+      id: 'pitch',
+      title : 'Background Check For Colors',
+      link : 'https://background.zuri.team/'
+    },
+    {
+      id: 'book__design',
+      title : 'Designer Books',
+      link : 'https://books.zuri.team/design-rules'
     },
   ]
   return (
     
     <div className="App">
 
-      {item.map(d => {
+      {item.map(data => {
         return (
           <Button 
-            link={d.link}
-            title={d.title}
+            link={data.link}
+            title={data.title}
           />
         )
       })}
