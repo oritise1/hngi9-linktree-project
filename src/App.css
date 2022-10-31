@@ -1,0 +1,18 @@
+.App{
+  align-items: center;
+}
+img{
+  width: 150px;
+}
+form{
+  /* height: 200px; */
+  position: relative;
+  border: 1px solid;
+  width: 60%;
+  padding: 30px;
+  align-self: center;
+  align-items: center;
+  /* padding-bottom: 100px; */
+  /* border: 1px inset gray; */
+  /* /* margin-left: 20px; */
+}
